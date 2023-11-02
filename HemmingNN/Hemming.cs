@@ -6,14 +6,14 @@ namespace HemmingNN
 {
     internal class Hemming
     {
-        int ZAYsize; // Number of Z A Y neurons (number of reference images)
-        int dimensionNeuronS; // Dimension of S neurons
-        double coefficientK;
-        double coefficientUn;
-        double coefficientEpsilon;
-        int[,] vArrays; // Vectors of reference images
-        int[] sArrays; // Vector of the presented image
-        List<Button> recognizedImage; // Elements of the recognized image
+        private int ZAYsize; // Number of Z A Y neurons (number of reference images)
+        private int dimensionNeuronS; // Dimension of S neurons
+        private double coefficientK;
+        private double coefficientUn;
+        private double coefficientEpsilon;
+        private int[,] vArrays; // Vectors of reference images
+        private int[] sArrays; // Vector of the presented image
+        private List<Button> recognizedImage; // Elements of the recognized image
 
         public Hemming(List<Button> referenceImages, List<Button> recognizedImage, List<Button> providedImage, double coefficientK)
         {
